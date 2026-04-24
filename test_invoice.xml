@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ENVELOPE>
+  <HEADER>
+    <TALLYREQUEST>Import Data</TALLYREQUEST>
+  </HEADER>
+  <BODY>
+    <IMPORTDATA>
+      <REQUESTDESC>
+        <REPORTNAME>Vouchers</REPORTNAME>
+        <STATICVARIABLES>
+          <SVCURRENTCOMPANY>Acme Pvt Ltd</SVCURRENTCOMPANY>
+        </STATICVARIABLES>
+      </REQUESTDESC>
+      <REQUESTDATA>
+        <TALLYMESSAGE xmlns:UDF="TallyUDF">
+          <VOUCHER REMOTEID="INV-2604-0001" VCHTYPE="Sales" ACTION="Create" OBJVIEW="Invoice Voucher View">
+            <DATE>20260415</DATE>
+            <EFFECTIVEDATE>20260415</EFFECTIVEDATE>
+            <VOUCHERTYPENAME>Sales</VOUCHERTYPENAME>
+            <VOUCHERNUMBER>INV-2604-0001</VOUCHERNUMBER>
+            <PARTYLEDGERNAME>XYZ Technologies Pvt Ltd</PARTYLEDGERNAME>
+            <PERSISTEDVIEW>Invoice Voucher View</PERSISTEDVIEW>
+            <ISINVOICE>Yes</ISINVOICE>
+            <GSTIN>29ABCDE1234F1ZL</GSTIN>
+            <ALLLEDGERENTRIES.LIST>
+              <LEDGERNAME>XYZ Technologies Pvt Ltd</LEDGERNAME>
+              <ISDEEMEDPOSITIVE>Yes</ISDEEMEDPOSITIVE>
+              <ISPARTYLEDGER>Yes</ISPARTYLEDGER>
+              <AMOUNT>-11800.00</AMOUNT>
+            </ALLLEDGERENTRIES.LIST>
+            <ALLLEDGERENTRIES.LIST>
+              <LEDGERNAME>Sales</LEDGERNAME>
+              <ISDEEMEDPOSITIVE>No</ISDEEMEDPOSITIVE>
+              <ISPARTYLEDGER>No</ISPARTYLEDGER>
+              <AMOUNT>10000.00</AMOUNT>
+            </ALLLEDGERENTRIES.LIST>
+            <ALLLEDGERENTRIES.LIST>
+              <LEDGERNAME>IGST @ 18.0%</LEDGERNAME>
+              <ISDEEMEDPOSITIVE>No</ISDEEMEDPOSITIVE>
+              <AMOUNT>1800.00</AMOUNT>
+            </ALLLEDGERENTRIES.LIST>
+            <INVENTORYENTRIES.LIST>
+              <STOCKITEMNAME>Software Development</STOCKITEMNAME>
+              <BILLEDQTY>4.0 HR</BILLEDQTY>
+              <ACTUALQTY>4.0 HR</ACTUALQTY>
+              <RATE>2500.00/HR</RATE>
+              <AMOUNT>10000.00</AMOUNT>
+              <ACCOUNTINGALLOCATIONLIST.LIST>
+                <LEDGERNAME>Sales</LEDGERNAME>
+                <ISDEEMEDPOSITIVE>No</ISDEEMEDPOSITIVE>
+                <AMOUNT>10000.00</AMOUNT>
+              </ACCOUNTINGALLOCATIONLIST.LIST>
+              <GSTDETAILS.LIST>
+                <TAXTYPE>GST</TAXTYPE>
+                <HSNCODE>998314</HSNCODE>
+                <IGSTRATE>18.0</IGSTRATE>
+              </GSTDETAILS.LIST>
+            </INVENTORYENTRIES.LIST>
+          </VOUCHER>
+        </TALLYMESSAGE>
+      </REQUESTDATA>
+    </IMPORTDATA>
+  </BODY>
+</ENVELOPE>
